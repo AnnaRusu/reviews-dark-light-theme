@@ -3,7 +3,7 @@ import { Review } from "./interfaces";
 import { ReviewsService } from "./reviews-service";
 
 export class TestReviews {
-  private reviews: Review[]
+  private reviews: Review[];
   htmlElement = new CreateElement();
 
   constructor() {
@@ -11,9 +11,10 @@ export class TestReviews {
   }
 
   getReviews() {
-    const reviewContainer = document.getElementById("reviewContainer");
+    const reviewsContainer = document.getElementById("reviewsContainer");
 
     this.reviews.map((review) => {
+      const reviewContainer = this.htmlElement.createElement("div", {class: "reviewContainer"}, reviewsContainer);
       const id = this.htmlElement.createElement("p", {id: "id"}, reviewContainer);
       const name = this.htmlElement.createElement("p", {id: "name"}, reviewContainer);
       const job = this.htmlElement.createElement("p", {id: "job"}, reviewContainer);

@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EAEA;EACA;EACA;EACA","file":"style.97fcb138.css","sourceRoot":"..","sourcesContent":["button {\r\n  width: auto;\r\n  height: 40px;\r\n\r\n  padding: 10px;\r\n  border-radius: 20px;\r\n  border: 1px solid rgb(182, 44, 113);\r\n  background-color: rgba(230, 230, 230, 0.692);\r\n}\r\n"]}
