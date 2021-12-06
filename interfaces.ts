@@ -1,8 +1,8 @@
 export interface Review {
-  id: number;
   name: string;
   job: string;
   content: string;
+  avatar: any;
 }
 
 export interface Metadata {
@@ -11,4 +11,6 @@ export interface Metadata {
   style?: {[key:string]:string};
   type?: string;
   value?: string;
+  src?: string;
+  alt?: string;
 }

@@ -6,6 +6,7 @@
 body {
   padding-top: 50px;
   height: 100vh;
+  background:rgba(237, 229, 240, 0.952);
 }
 
 button {
@@ -18,11 +19,11 @@ button {
   border-radius: 50%;
   border: none;
   background-color: rgba(230, 230, 230, 0.692);
-}
 
-button > img {
-  width: 25px;
-  height: 25px;
+  img {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 button:hover {
@@ -42,15 +43,39 @@ button:hover {
 }
 
 #reviewsContainer {
-  padding: 0px 50px 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landpageContainer {
+  position: relative;
+}
+
+#previous {
+  position: absolute;
+}
+
+#next {
+  position: relative;
+  margin-left: 200px;
 }
 
 .reviewContainer {
-  padding: 0px 50px 50px 50px;
-}
+  width: 300px;
+  height: auto;
+  margin: 50px;
+  padding: 20px;
+  background:rgba(255, 255, 255, 0.952);
 
-.reviewContainer > * {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }

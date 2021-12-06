@@ -1,16 +1,17 @@
 import { CreateLandpage } from "./create-landpage";
-import { TestReviews } from "./create-reviews";
+import { Reviews } from "./create-reviews";
 
-class Main{
+class Main {
   landpage = new CreateLandpage();
-  reviews = new TestReviews();
+  reviews = new Reviews();
 
   renderLandpage() {
     this.landpage.renderLandpage();
   }
 
   renderReviews() {
-    this.reviews.getReviews();
+    this.reviews.createReviewHTMLElements();
+    this.reviews.renderReviews();
   }
 }
 

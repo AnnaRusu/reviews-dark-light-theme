@@ -14,16 +14,11 @@ export class CreateElement {
         Object.assign(this.element.style, metadata[key]);
       }
       else {
-        // this.element[key] = metadata[key]; 
         this.element.setAttribute(key, metadata[key]);
       }
     })
     return this.element;
   }
-
-  // setTextContent(text: string) {
-  //   this.element.textContent = text;
-  // }
 
   setTextContent(element: HTMLElement, text: string) {
     element.textContent = text;
