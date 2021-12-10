@@ -13,12 +13,12 @@ export class Reviews {
 
   createReviewHTMLElements() {
     const reviewsContainer = document.getElementById("reviewsContainer");
-    const reviewContainer = this.htmlElement.createElement("div", {class: "reviewContainer"}, reviewsContainer);
+    const reviewContainer = this.htmlElement.createElement("div", {id: "reviewContainer", class: "reviewContainer"}, reviewsContainer);
 
     const avatar = this.htmlElement.createElement("img", {id: "avatar"}, reviewContainer);
-    const name = this.htmlElement.createElement("p", {id: "name"}, reviewContainer);
-    const job = this.htmlElement.createElement("p", {id: "job"}, reviewContainer);
-    const content = this.htmlElement.createElement("p", {id: "content"}, reviewContainer);
+    const name = this.htmlElement.createElement("p", {id: "name", class: "name"}, reviewContainer);
+    const job = this.htmlElement.createElement("p", {id: "job", class: "job"}, reviewContainer);
+    const content = this.htmlElement.createElement("p", {id: "content", class: "content"}, reviewContainer);
   }
 
   getReviewHTMLElements() {

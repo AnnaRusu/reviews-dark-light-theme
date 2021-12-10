@@ -5,16 +5,12 @@ export class CreateLandpage {
 
   renderLandpage() {
     const mainContainer = document.getElementById("landpageContainer");
-    const title = this.htmlElement.createElement("h2", {id:"title"}, mainContainer);
+    const title = this.htmlElement.createElement("h2", {id:"title", class:"title"}, mainContainer);
+    const titleSpan = this.htmlElement.createElement("span", {id:"titleSpan", class:"titleSpan"}, title);
     const reviewContainer = this.htmlElement.createElement("div", {id:"reviewsContainer"}, mainContainer);
-    const previousButton = this.htmlElement.createElement("button", {id: "previous"}, mainContainer); //extract in render landpage
-    const nextButton = this.htmlElement.createElement("button", {id: "next"}, mainContainer);
 
-    previousButton.textContent = "<";
-    nextButton.textContent = ">";
-
-    this.htmlElement.setTextContent(title, "Reviews");
+    this.htmlElement.setTextContent(titleSpan, "Reviews");
     
-    return {title, reviewContainer};
+    return {title,titleSpan, reviewContainer};
   }
 }
